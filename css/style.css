@@ -1,0 +1,80 @@
+/*ss重置样式  */
+body,div,i,a,p,span,b,input,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,dt,textarea,img{margin:0;padding:0;}
+body{font-family: microsoft yahei;color:#333;}
+i,b{font-style: normal;}
+a{text-decoration:none;}
+img{vertical-align:top;width: 100%;}
+input,textarea,select,textarea,img,a{resize: none;outline: none;border: none;}
+li{list-style: none}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix:after{content: '';display: block;height:0;clear: both;font-size:0;*zoom:1}
+
+
+.header{background:#ff5852;height:44px;position:relative;}
+.header .back{float:left;padding:10px 3% 0;width:15px;}
+.header .h3{position:absolute;left:50%;top:0;margin-left:-21%;height:44px;line-height:44px;color:#fff;font-size:18px;text-align: center;}
+.header .share{float:right;width:20px;padding:10px 3% 0;}
+
+.index{}
+.index .banner{position: relative;}
+.index .banner .rules{position: absolute;left: 50%;bottom: 5%;margin-left: -16%;width: 38%;color:#fefefe;font-size: 16px;}
+.index .banner .rules .rupic{width: 15px;height: 13px;float: left;margin-top: 2%;}
+.index .banner .rules .rutxt{float: left;padding-left: 5%;}
+.index .main{background-color:#ebeeef;height:280px;position:relative;}
+.index .main a{padding-top: 11%;width: 180px;height: 40px;z-index: 10;display: block;position: absolute;left: 50%;top:27%;margin-left: -85px;}
+/*
+select{border: 1px solid #999999;border-radius: 5px;width: 200px;height: 30px;color:#999999;margin-top: 20%;margin-left: 22%;}
+*/
+.ggl{position:absolute;left:50%;top:65%;width:76%;height:82px;margin-left:-38%;}
+.ggl .canvas{position:absolute;left:2.5%;top:0;width:95%;height:82px;line-height:82px;text-align:center;z-index:10;}
+.ggl .info{position:absolute;left:0;top:0;width:100%;height:82px;line-height:82px;text-align:center;z-index:5;}
+.ggl .info span{display:block;font-size:18px;line-height:82px;}
+.important{background: #ebeeef;height:350px;position:relative;}
+.important .conle{float:left;display:none;}
+.important ul{position:absolute;right:3%;top:5%;}
+.important ul li{width: 40px;height: 40px;margin-top: 14%;}
+.following .folla{width: 30%;float: left;margin: 8% 5%;}
+.following .follb{width: 45%;float: left;margin-top: 15%;font-size: 14px;margin-left: 2%;}
+.following .follb h3{color: #333333;font-size: 16px;height: 30px;line-height: 30px;}
+.following .follb p{height: 30px;line-height: 30px;color:#666666;}
+.following .follc{width: 10%;float: right;margin-top: 23%;margin-right: 3%;}
+.canyu{width:100%;height:60px;}
+.canyu a{color:#fff;display: block;width: 100px;height: 30px;background: #ff5852;border-radius: 5px;font-size: 14px;line-height: 30px;margin:auto;text-align: center;}
+
+.guaj{position:absolute;left:50%;top:67%;margin-left:-20%;width:40%;line-height:40px;color:#fff;font-size:18px;z-index:99;text-align:center;}
+#scratch{ position:absolute;left:50%;top:67%;margin-left:-90px;}
+#cover{ position: absolute; top:0; left:0;}
+#card{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+
+#card {
+    height: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    background: #FAFAFA;
+}
+
+#scratch {
+    width: 200px;
+    height: 40px;
+    /*margin: 50px auto 0;*/
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+     <meta charset="utf-8">
+     <meta http-equiv="Cache-Control" content="no-cache"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+     <title>旧时光首页</title>
+     <link href="css/style.css" rel="stylesheet">
+     <link href="css/demo.css" rel="stylesheet">
+     <link href="css/pickout.css" rel="stylesheet">
+	 <script src="js/jquery-3.1.0.min.js"></script>
+     <script src="js/pickout.js"></script>
+	  <script src="js/lucky-card.js"></script>
+	  <script>
+          $(document).ready(function () {
+              $("#scratch").keydown(function () {    // 按键按下时触发的事件；
+                  $(".guaj").css("display", "none");
+              });
+		  });
+	  </script>
+</head>
+<body>
+	<div class="index">
+			<div class="header">
+				<a href="javascript:;" class="back"><img src="images/fanhui.png"></a>
+				<h3 class="h3">区县到朝天门的距离</h3>
+				<a href="javascript:;" class="share"><img src="images/share.png"></a>
+			</div>
+			<div class="banner"><img src="images/bapic_02.jpg"/>
+				<div class="rules">
+					<div class="rupic"><img src="images/gutb.png"/></div>
+					<div class="rutxt">查看游戏规则</div>
+				</div>
+			</div>
+			<div class="main">
+				 <div class="form-group">
+			          <select name="city" id="city" class="city pickout" placeholder="请选择你所在的区县">
+	                <option data-icon="&spades;" value="bj">南川金佛山</option>
+	                <option data-icon="&clubs;" value="sh">长寿古镇</option>
+	                <option data-icon="&hearts;" value="gz">长寿古镇</option>
+	                <option selected data-icon="&diams;" value="sz">长寿古镇</option>
+	                <option data-icon="&#9786;" value="xg">长寿古镇</option>
+	                <option data-icon="&#9792;" value="sjz">长寿古镇</option>
+	                <option data-icon="&#9794;" value="cd">成都</option>
+	                <option data-icon="&#x2605;" value="ht">两江影视民国街</option>
+	                <option data-icon="&#x25C6;" value="ht">两江影视民国街</option>
+					</select>
+          </div>
+				<a href="javascript:;"><img src="images/ljcy.png"/></a>
+				<div class="guaj">开始刮奖</div>
+				<div id="scratch">
+					<div id="card">￥5000000元</div>
+				</div>
+				<script>
+                    LuckyCard.case({
+                        ratio: .6
+                    }, function() {
+                        //alert('至于你信不信，我反正不信！');
+                        this.clearCover();
+                    });
+				</script>
+			</div>
+			<div class="footer"><img src="images/footer_02.jpg"/></div>	
+	</div>
+</body>
+<script type="text/javascript">
+			// Preparar o select
+			//pickout.to('.pickout');
+			pickout.to({
+			    el: '.city',
+			    theme: 'dark',
+			    search: true
+			});
+			
+			pickout.to({
+			    el: '.state',
+			    theme: 'clean',
+			});
+			
+			// automaticamente
+			pickout.updated('.city');
+		</script>
+</html>

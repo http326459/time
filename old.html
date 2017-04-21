@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+    <title>1970年旧时光</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    <link href="css/pickout.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/pickout.js"></script>
+	  <script>
+          $(function(){
+              $("#car li").click(function(){
+                  var num = $(this).index();
+                  $(".conle").css("display","none");
+                  $(this).parent().parent().find(".conle").eq(num).css("display","block");
+                  if(num == 0){
+                      $("#car").find("li").eq(1).find("a img").attr("src","images/1970_06.png");
+                      $("#car").find("li").eq(2).find("a img").attr("src","images/1970_08.png");
+                      $(this).find("a img").attr("src","images/454_03.png");
+                  }else if(num == 1){
+                      $("#car").find("li").eq(0).find("a img").attr("src","images/1970_03.png");
+                      $("#car").find("li").eq(2).find("a img").attr("src","images/1970_08.png");
+                      $(this).find("a img").attr("src","images/454_06.png");
+                  }else if(num == 2){
+                      $("#car").find("li").eq(0).find("a img").attr("src","images/1970_03.png");
+                      $("#car").find("li").eq(1).find("a img").attr("src","images/1970_06.png");
+                      $(this).find("a img").attr("src","images/454_08.png");
+                  }
+
+              });
+          });
+	  </script>
+	</head>
+	<body>
+		<div class="old">
+			<div class="header">
+				<a href="javascript:;" class="back"><img src="images/fanhui.png"></a>
+				<h3 class="h3" style="margin-left: -19%;">1970年旧时光</h3>
+				<a href="javascript:;" class="share"><img src="images/share.png"></a>
+			</div>
+			<div  class="important">
+				<ul class="car" id="car">
+					<li><a href="javascript:;"><img src="images/454_03.png"/></a></li>
+					<li><a href="javascript:;"><img src="images/1970_06.png"/></a></li>
+					<li><a href="javascript:;"><img src="images/1970_08.png"/></a></li>
+				</ul>
+				<div class="conle" style="display:block;"><img src="images/GIF.gif" /></div>
+				<div class="conle"><img src="images/GIF.gif" /></div>
+				<div class="conle"><img src="images/GIF.gif" /></div>
+			</div>
+			<div class="following">
+				<div class="folla">
+					<div class="follatop"><img src="images/nian.png"/></div>
+					<div class="follabot"><img src="images/foll_03.jpg"/></div>
+				</div>
+				<div class="follb">
+					<h3>巴南区到朝天门</h3>
+					<p>直线距离：30公里</p>
+					<p>搭乘汽车需要3个小时</p>
+				</div>
+				<div class="follc"><img src="images/454_03.png"/></div>
+			</div>
+		</div>
+	</body>
+</html>
